@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="left">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+          <div class="icons">
+            <span class="icon">
+              <img src="./images/icon-document.svg" alt="icon" />
+            </span>
+            <span class="icon">
+              <img src="./images/icon-folder.svg" alt="icon" />
+            </span>
+            <span class="icon">
+              <img src="./images/icon-upload.svg" alt="icon" />
+            </span>
+          </div>
+        </section>
+        <section class="right">
+          <h4 class="title">You’ve used <span>815</span> of your storage</h4>
+          <div class="range">
+            <input type="range" name="totaldata" id="totaldata" class="data" min='0' max="1000" value='815' disabled/>
+            <label id='zero' for="totaldata">0 GB</label>
+            <label id='th' for="totaldata">1000 GB</label>
+            <div class="left-data">
+              <h2 class="num">185 <span>GB LEFT</span></h2>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.github.com/vshal-ch">Vishal</a>.
+    </footer>
+  </body>
+</html>
